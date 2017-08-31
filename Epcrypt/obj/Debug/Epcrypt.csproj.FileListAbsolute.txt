@@ -5,3 +5,10 @@ C:\Users\vegar\Dropbox\Programmering\C#\Epcrypt\Epcrypt\obj\Debug\Epcrypt.csproj
 C:\Users\vegar\Dropbox\Programmering\C#\Epcrypt\Epcrypt\obj\Debug\Epcrypt.csproj.CoreCompileInputs.cache
 C:\Users\vegar\Dropbox\Programmering\C#\Epcrypt\Epcrypt\obj\Debug\Epcrypt.exe
 C:\Users\vegar\Dropbox\Programmering\C#\Epcrypt\Epcrypt\obj\Debug\Epcrypt.pdb
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Debug\Epcrypt.exe.config
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Debug\Epcrypt.exe
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Debug\Epcrypt.pdb
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.csprojResolveAssemblyReference.cache
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.csproj.CoreCompileInputs.cache
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.exe
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.pdb

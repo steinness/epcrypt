@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 // FIX UNICODE
+// Git test :D
 
 namespace Epcrypt {
 	public class Epcrypt {
