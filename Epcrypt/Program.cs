@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//FIX [] AND UNICODE!
+// FIX UNICODE
 
 namespace Epcrypt {
 	public class Epcrypt {
