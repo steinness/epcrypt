@@ -1,0 +1,10 @@
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.exe.config
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.exe
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.pdb
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.csproj.CoreCompileInputs.cache
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.exe
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.pdb
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.exe.manifest
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.application
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.exe.manifest
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.application

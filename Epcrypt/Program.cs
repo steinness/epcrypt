@@ -104,25 +104,27 @@ namespace Epcrypt {
 	class Program {
 		static void Main(string[] args) {
 			string encryptOrDecrypt;
-			string unicodeCheck;
+			//string unicodeCheck;
 			string text;
 			string password;
 			bool unicode = false;
 
-			// Set encoding to unicode
+			// Set encoding to unicode (doesn't work :/)
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 			while (true) {
 				Console.Write("Encrypt or decrypt? (d/e): ");
 				encryptOrDecrypt = Console.ReadLine();
+				unicode = false;
+				/*
 				Console.Write("Use unicode encryption? (y/n): ");
 				unicodeCheck = Console.ReadLine();
-				unicode = true;
+				
 
 				if (unicodeCheck == "N" || unicodeCheck == "n") {
 					unicode = false;
 				}
-				
+				*/
 
 				if (encryptOrDecrypt == "E" || encryptOrDecrypt == "e") {
 					Console.Write("What do you want to encrypt?: ");
