@@ -12,3 +12,7 @@ C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.csprojResolveA
 C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.csproj.CoreCompileInputs.cache
 C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.exe
 C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.pdb
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Debug\Epcrypt.exe.manifest
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Debug\Epcrypt.application
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.exe.manifest
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Debug\Epcrypt.application

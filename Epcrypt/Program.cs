@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 // FIX UNICODE
 // Git test :D
@@ -88,6 +89,28 @@ namespace Epcrypt {
 			return decryptedText;
 		}
 
+		// For encrypting files
+		public static void EncryptFile(string password, string filepath, bool unicode) {
+			string newFilepath = filepath.Insert((filepath.IndexOf('.')), "_e");
+
+			foreach (string line in File.ReadLines(filepath)) {
+				string encryptedLine = Encrypt(password, line, unicode);
+				File.AppendAllText(newFilepath, encryptedLine);
+				File.AppendAllText(newFilepath, "\n\r");
+			}
+		}
+
+		// For decrypting files
+		public static void DecryptFile(string password, string filepath, bool unicode) {
+			string newFilepath = filepath.Insert((filepath.IndexOf('.')), "_d");
+
+			foreach (string line in File.ReadLines(filepath)) {
+				string decryptedLine = Decrypt(password, line, unicode);
+				File.AppendAllText(newFilepath, decryptedLine);
+				File.AppendAllText(newFilepath, "\n\r");
+			}
+		}
+
 		// For generating a shift number from string
 		private static int ShiftGenerator(string password) {
 			int s = 0;
@@ -105,8 +128,10 @@ namespace Epcrypt {
 		static void Main(string[] args) {
 			string encryptOrDecrypt;
 			//string unicodeCheck;
+			string fileOrNot;
 			string text;
 			string password;
+			string filepath;
 			bool unicode = false;
 
 			// Set encoding to unicode (doesn't work :/)
@@ -115,6 +140,14 @@ namespace Epcrypt {
 			while (true) {
 				Console.Write("Encrypt or decrypt? (d/e): ");
 				encryptOrDecrypt = Console.ReadLine();
+				if (encryptOrDecrypt == "e" || encryptOrDecrypt == "E") {
+					Console.Write("Encrypt a file? (y/n): ");
+					fileOrNot = Console.ReadLine();
+				}
+				else {
+					Console.Write("Decrypt a file? (y/n): ");
+					fileOrNot = Console.ReadLine();
+				}
 				unicode = false;
 				/*
 				Console.Write("Use unicode encryption? (y/n): ");
@@ -125,25 +158,45 @@ namespace Epcrypt {
 					unicode = false;
 				}
 				*/
-
+				
 				if (encryptOrDecrypt == "E" || encryptOrDecrypt == "e") {
-					Console.Write("What do you want to encrypt?: ");
-					text = Console.ReadLine();
-					Console.Write("What is your password?: ");
+					if (fileOrNot == "y" || fileOrNot == "Y") {
+						Console.Write("Filepath: ");
+						filepath = Console.ReadLine();
+						Console.Write("What is your password? ");
+						password = Console.ReadLine();
+						Epcrypt.EncryptFile(password, filepath, unicode);
+						Console.WriteLine("Done!");
+					}
+					else {
 
-					password = Console.ReadLine();
-					Console.WriteLine(Epcrypt.Encrypt(password, text, unicode));
-					Console.WriteLine("\n");
+						Console.Write("What do you want to encrypt?: ");
+						text = Console.ReadLine();
+						Console.Write("What is your password?: ");
 
+						password = Console.ReadLine();
+						Console.WriteLine(Epcrypt.Encrypt(password, text, unicode));
+						Console.WriteLine("\n");
+					}
 				}
 				else if (encryptOrDecrypt == "D" || encryptOrDecrypt == "d") {
-					Console.Write("What do you want to decrypt?: ");
-					text = Console.ReadLine();
-					Console.Write("What is your password?: ");
+					if (fileOrNot == "y" || fileOrNot == "Y") {
+						Console.Write("Filepath: ");
+						filepath = Console.ReadLine();
+						Console.Write("What is your password? ");
+						password = Console.ReadLine();
+						Epcrypt.DecryptFile(password, filepath, unicode);
+						Console.WriteLine("Done!");
+					}
+					else {
+						Console.Write("What do you want to decrypt?: ");
+						text = Console.ReadLine();
+						Console.Write("What is your password?: ");
 
-					password = Console.ReadLine();
-					Console.WriteLine(Epcrypt.Decrypt(password, text, unicode));
-					Console.WriteLine("\n");
+						password = Console.ReadLine();
+						Console.WriteLine(Epcrypt.Decrypt(password, text, unicode));
+						Console.WriteLine("\n");
+					}
 				}
 			}
 		}

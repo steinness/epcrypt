@@ -8,3 +8,4 @@ C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.exe.manifest
 C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\bin\Release\Epcrypt.application
 C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.exe.manifest
 C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.application
+C:\Users\vegar\Documents\Github\epcrypt\Epcrypt\obj\Release\Epcrypt.csprojResolveAssemblyReference.cache
