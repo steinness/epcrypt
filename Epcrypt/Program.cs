@@ -138,13 +138,16 @@ namespace Epcrypt {
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 			while (true) {
+				Console.ForegroundColor = ConsoleColor.Green;
 				Console.Write("Encrypt or decrypt? (d/e): ");
 				encryptOrDecrypt = Console.ReadLine();
 				if (encryptOrDecrypt == "e" || encryptOrDecrypt == "E") {
+					Console.ForegroundColor = ConsoleColor.Cyan;
 					Console.Write("Encrypt a file? (y/n): ");
 					fileOrNot = Console.ReadLine();
 				}
 				else {
+					Console.ForegroundColor = ConsoleColor.Magenta;
 					Console.Write("Decrypt a file? (y/n): ");
 					fileOrNot = Console.ReadLine();
 				}
@@ -165,6 +168,7 @@ namespace Epcrypt {
 						filepath = Console.ReadLine();
 						Console.Write("What is your password? ");
 						password = Console.ReadLine();
+						Console.ForegroundColor = ConsoleColor.White;
 						Epcrypt.EncryptFile(password, filepath, unicode);
 						Console.WriteLine("Done!");
 					}
@@ -175,6 +179,7 @@ namespace Epcrypt {
 						Console.Write("What is your password?: ");
 
 						password = Console.ReadLine();
+						Console.ForegroundColor = ConsoleColor.White;
 						Console.WriteLine(Epcrypt.Encrypt(password, text, unicode));
 						Console.WriteLine("\n");
 					}
@@ -185,6 +190,7 @@ namespace Epcrypt {
 						filepath = Console.ReadLine();
 						Console.Write("What is your password? ");
 						password = Console.ReadLine();
+						Console.ForegroundColor = ConsoleColor.White;
 						Epcrypt.DecryptFile(password, filepath, unicode);
 						Console.WriteLine("Done!");
 					}
@@ -194,6 +200,7 @@ namespace Epcrypt {
 						Console.Write("What is your password?: ");
 
 						password = Console.ReadLine();
+						Console.ForegroundColor = ConsoleColor.White;
 						Console.WriteLine(Epcrypt.Decrypt(password, text, unicode));
 						Console.WriteLine("\n");
 					}
